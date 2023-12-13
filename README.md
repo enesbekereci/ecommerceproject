@@ -17,11 +17,15 @@ docker-compose -f ./app/docker-compose.yml up --scale ecommerceapp=5 --detach
 ```
 docker-compose -f ./logging/docker-compose.yml up --detach
 ```
-3. Open UI
+3. Open Flask app
+```
+http://127.0.0.1:5000/
+```
+4. Open Elastic
 ```
 http://localhost:5601/
 ```
-4. Check menu>observability>logs
+5. Check menu>observability>logs
 
 Illegal Item : 
 
